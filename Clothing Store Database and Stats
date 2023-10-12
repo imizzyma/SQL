@@ -1,0 +1,24 @@
+- Create a clothing store database
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, brand TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO clothing VALUES
+(1, "shirts", "Gucci", 5, 10),
+(2, "pants", "Chanel", 6, 11),
+(3, "longsleeve", "Versace", 7, 12),
+(4, "shorts", "Dior", 8, 13),
+(5, "dresses", "Valentino", 9, 14),
+(6, "skirts", "Calvin_Klein", 10, 15),
+(7, "socks", "Longchamp", 11, 16),
+(8, "crop_tops", "Louis_Vuitton", 20, 29),
+(9, "shoes", "Nike", 39, 18),
+(10, "heels", "Steve_Madden", 18, 16),
+(11, "bras", "Victoria_Secret", 32, 14),
+(12, "panties", "Target", 11, 10),
+(13, "boxers", "Hanes", 5, 8),
+(14, "briefs", "Tommy", 3, 12),
+(15, "jackets", "Cole", 15, 38);
+
+- Display the quantity, name, and price values from the database ordered by price
+SELECT quantity, name, price FROM clothing
+ORDER BY price;
